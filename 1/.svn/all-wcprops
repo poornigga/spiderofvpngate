@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/iterator/!svn/ver/155/1
+END
+index.wsgi
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/iterator/!svn/ver/63/1/index.wsgi
+END
+config.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/iterator/!svn/ver/1/1/config.yaml
+END
+app.py
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/iterator/!svn/ver/173/1/app.py
+END
+dbkeys.py
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/iterator/!svn/ver/104/1/dbkeys.py
+END
