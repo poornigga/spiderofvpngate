@@ -9,8 +9,11 @@ class vpsMailContent():
 
         """fetch vps content links"""
 
-        def __init__(self, emailserver="pop.gmail.com", username="", passwd=""):
-            """ init """ 
+        def __init__(self,
+                     emailserver="pop.gmail.com",
+                     username="",
+                     passwd=""):
+            """ init """
             self.emailserver = emailserver
             self.username = username
             self.passwd = passwd
@@ -28,8 +31,8 @@ class vpsMailContent():
 
                 (self.mailcount, self.totalsize) = self.sp.stat()
                 if self.mailcount > 0:
-                        (self.mailheader, self.mailContent, oct) = self.sp.retr(
-                            self.mailcount)
+                        (self.mailheader,
+                         self.mailContent, oct) = self.sp.retr(self.mailcount)
                 self.sp.quit()
 
         def vpsresult(self):
@@ -37,6 +40,7 @@ class vpsMailContent():
                 if len(self.mailContent) > 10:
                         return "\n".join(self.mailContent)
                 return ""
+
 
 def mail_main():
     """ pop3 recive email"""
@@ -68,7 +72,9 @@ def mail_main():
             link = re.findall(r"http.*?\:[0-9]{3,5}\/", str(payload))
     return link
 
+
 if __name__ == '__main__':
     lk = mail_main()
     print '\n'.join(lk)
+
 

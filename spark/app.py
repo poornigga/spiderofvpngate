@@ -17,9 +17,9 @@ def ezilaires(lst):
             c['host'] = ''
         c['country'] = i['country']
         c['quality'] = i['quality']
-        c['info']    = i['vpn_conn_info'].replace('.','')
-        c['perfor']  = i['performance']
-        c['ssl5pn']  = i['conn_supported']
+        c['info'] = i['vpn_conn_info'].replace('.', '')
+        c['perfor'] = i['performance']
+        c['ssl5pn'] = i['conn_supported']
         c['open5pn'] = i['openvpn_config']
         result.append(c)
     return result
