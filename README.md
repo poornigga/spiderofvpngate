@@ -14,3 +14,7 @@ got vpn address finally.
 
 1. spark/ worked on you laptop, or a deamon service.
 2. 1/ is a sina sae demo app.
+
+
+*** sinaapp.com domain change to vipsinaapp.com ***
+
